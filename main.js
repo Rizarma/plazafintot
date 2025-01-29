@@ -145,7 +145,7 @@ const main = async () => {
             const walletKey = wallet.address.toLowerCase();
             claimedState[walletKey] = claimedState[walletKey] || { nft1: false, nft3: false, nft5: false };
             const proxy = proxyList.length > 0 ? proxyList[index % proxyList.length] : null;
-            log.warn(`Running Using Proxy: ${proxy || 'No Proxy'}`);
+            log.warn(`[${index + 1}/${proxyList.length}] Running Using Proxy: ${proxy || 'No Proxy'}`);
             try {
                 await claimRequest(wallet.address, proxy);
 
