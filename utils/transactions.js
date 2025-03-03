@@ -2,7 +2,7 @@ import { ethers } from 'ethers';
 import log from "./logger.js";
 
 // Configuration
-const provider = new ethers.JsonRpcProvider('https://base-sepolia-rpc.publicnode.com');
+const provider = new ethers.JsonRpcProvider('https://base-sepolia.drpc.org');
 const contractAddress = '0xF39635F2adF40608255779ff742Afe13dE31f577';
 const contractSwap = "0x809daBC75201F92AC40973f22db37995676BaA04"
 const explorer = 'https://sepolia.basescan.org/tx/'
